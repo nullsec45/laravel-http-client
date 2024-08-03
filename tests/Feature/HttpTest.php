@@ -24,7 +24,7 @@ class HttpTest extends TestCase
         self::assertTrue($response->ok());
     }
 
-    public function testReponse(){
+    public function testResponse(){
         $response=Http::get("https://eokih5piy7jx0o1.m.pipedream.net/");
         self::assertEquals(200, $response->status());
         self::assertNotNull($response->headers());
